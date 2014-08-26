@@ -4,9 +4,9 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Cpp11 Overview</title>
+    <title>OpenGL Overview</title>
 
-    <meta name="description" content="Cpp11 Overview">
+    <meta name="description" content="OpenGL Overview">
     <meta name="author" content="Maik Klein">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -42,6 +42,66 @@ if( window.location.search.match( /print-pdf/gi ) ) {
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section class="" data-id="939d150e629ba16a71c276365ba4646c">&nbsp;<h1 class="absolute-element" style="position: absolute; width: 619.042588042588px; height: 96px; z-index: 4; left: 163px; top: 257px; max-height: none; max-width: none;">OpenGL</h1>
+        </section>
+        <section>
+          <ul>
+            <li> OpenGL exists since 17 years and it has under gone some radical changes. </li>
+            <li> We split OpenGL into old and modern OpenGL </li>
+            <li> Old OpenGL is considered deprecated </li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li> OpenGL ES 2.0/3.0/3.1 - Mobile</li>
+            <li> WebGL - Browser</li>
+            <li> OpenGL 3.3 - Similar to DX9</li>
+            <li> OpenGL 4.x - Similar to DX11</li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li> Modern OpenGL is still a state machine. </li>
+            <li> This means that we have global mutable state. </li>
+            <li> OpenGL is type unsafe. It's up to the programmer to don't make mistakes.</li>
+            <li> The OpenGL API is written in C.</li>
+            <li> Driver quality is dependent on the manufacturer (Nvidia, Amd, Intel etc) </li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li> We now have more control over the pipeline. </li>
+            <li> The programmable parts of this pipeline can be programmed in GLSL. (Shader) </li>
+            <li> We also have control over the data that we are sending to the GPU. </li>
+          </ul>
+        </section>
+        <section>
+          Some programmable shader stages:
+          <br>
+          <ul>
+            <li> Vertex shader</li>
+            <li> Fragment shader</li>
+            <li> Tessellation shader </li>
+            <li> Geometry shader </li>
+            <li> Compute shader </li>
+          </ul>
+        </section>
+        <section>
+          <div>
+          OpenGL Debugger:
+          </div>
+          <ul>
+            <li>  Nsight - Nivdia and Windows only</li>
+            <li> APITRACE </li>
+            <li> VOGL </li>
+          </ul>
+        </section>
+        <section>
+          Useful links:
+          <br>
+          <ul>
+            <li> http://docs.gl    -- Modern OpenGL docs</li>
+            <li> http://www.ustream.tv/recorded/51212968 -- Nvidia OpenGL 4+</li>
+          </ul>
         </section>
 
         <!--sldes end-->
